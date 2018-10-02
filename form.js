@@ -38,10 +38,10 @@ app.get('/form',function(req,res){
 app.post('/form/submit-student-data', function (req, res) {
     
     res.render('ejsfile',{
-								firstname: req.body.firstName,
-								lastname: req.body.lastName,
-								hobbies:req.body.Hobbies
-							});
+				firstname: req.body.firstName,
+				lastname: req.body.lastName,
+				hobbies:req.body.Hobbies
+			});
 
     res.render('ejsfile.ejs',{firstname:req.body.firstName, lastname:req.body.lastName});
 });
