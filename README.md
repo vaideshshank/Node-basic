@@ -1,2 +1,3 @@
-# Node-basic
-Consists of basic node js apps
+### Node-basic
+> Basic form using Express and EJS as the templating engine
+
