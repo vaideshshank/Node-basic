@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+    	h2{
+    		color: blue;
+    	}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="ctrl">
+    <h2>Mark your selection</h2>
+    <% include nav%>
+    {{text}}
+	</div>
+	
+</body>
+	<script>
+		var app=angular.module('myApp',[]);
+		app.controller("ctrl",['$scope',function($scope){
+			$scope.text="Nice Choice";
+		}]);
+	</script>
+</html>
+
+
+
+
